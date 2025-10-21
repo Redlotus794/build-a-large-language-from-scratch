@@ -1,0 +1,35 @@
+# 项目基本信息
+title: "Build a Large Language Model from Scratch (从零构建大规模语言模型)"
+author: "JiaLong.Wang"         
+copyright: "2024 build-a-large-language-model-from-scratch"     # 使用包名作为版权主体
+# project version (from pyproject.toml): 1.0.18
+
+# 构建配置
+build:
+  builder: html                # 构建为 HTML 格式
+  output_dir: _build/html      # 输出目录
+
+# 导航结构（左侧目录）
+nav:
+  - intro.md                   # 项目中存在的 intro 页面
+  - 代码示例: notebooks/example.ipynb  # 仓库中存在的笔记本示例
+  # references.md 未找到（未在仓库中）；如需添加，请在此处插入 references.md
+
+# 执行笔记本配置（是否自动运行代码）
+execute:
+  execute_notebooks: "auto"    # "auto" 自动运行未执行过的代码；"off" 不运行
+  cache: "true"                  # 缓存运行结果（加速二次构建）
+  timeout: 300                 # 代码执行超时时间（秒）
+
+# 界面样式
+html:
+  theme: sphinx_book_theme     # 主题（推荐默认主题）
+  favicon: ""                  # 可选：浏览器图标
+  use_repository_button: false  # 显示仓库链接按钮（如果托管在 GitHub 等）
+  use_issues_button: false      # 显示问题反馈按钮
+
+# 扩展功能（可选）
+sphinx:
+  extra_extensions:
+    - sphinx.ext.mathjax       # 支持数学公式
+    - sphinx.ext.githubpages   # 部署到 GitHub Pages 时启用
