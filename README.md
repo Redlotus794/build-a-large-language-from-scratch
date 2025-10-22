@@ -8,4 +8,9 @@ source ./venv/bin/activate
 
 uv pip install packages
 uv pip install jupyter-book build
+
+jupyter-book build .
+python -m http.server 8080
 ```
+s
+

@@ -1,0 +1,4 @@
+# 忽略 Sphinx 构建目录、Python 虚拟环境和 JetBrains 配置
+_build/
+.venv/
+.idea/
